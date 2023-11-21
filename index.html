@@ -22,7 +22,7 @@
 <body>
     <div id="app">
 
-        <button @click="getMails()">genera</button>
+        <button @click="getMails(10)">genera</button>
         
         <ul >
         <li v-for="email in mailList" v-if="mailList.length == 10"> {{email}} </li>
