@@ -19,7 +19,7 @@ const opzioni = {
             this.mailList = [];
             for (let i = 0; i < quantity; i++) {
                 
-                axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(r => {
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail?' + i).then(r => {
                     email = r.data.response;
                     this.mailList.push(email);
                     console.log(i, this.mailList, email)
